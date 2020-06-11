@@ -37,6 +37,12 @@ header a {
     text-decoration: none;
 }
 
+footer a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
 .portrait {
     width: 250px;
     height: 300px;
@@ -53,4 +59,14 @@ button {
     background-color: #888888;
     color: #ffffff;
     padding: 8px;
+}
+
+ul {
+    line-height: 1.5rem;
+}
+
+.contact {
+    width: 20px;
+    height: 20px;
+    background-color: red;
 }

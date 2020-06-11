@@ -29,14 +29,14 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About Me',
+        title: 'About',
         name: 'Tosin Ojo'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        helpText: 'This is some helpful text.',
+        helpText: 'To use this site follow the simple steps below:',
         title: 'Help',
         name: 'Tosin Ojo'
     })

@@ -9,9 +9,22 @@
 </head>
 
 <body>
+    <style>
+        p, ul {
+            text-align: justify;
+            width: 310px;
+            line-height: 1.7rem;
+        }
+    </style>
     <div class="main-content">
         {{>header}}
         <p>{{helpText}}</p>
+        <ul>
+            <li>Input the location of interest into the text box</li>
+            <li>Provide detailed location to increase precision</li>
+            <li>Click the search button</li>
+            <li>Get your forecast</li>
+        </ul>
     </div>
 
     {{>footer}}
