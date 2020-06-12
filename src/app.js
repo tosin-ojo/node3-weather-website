@@ -23,14 +23,14 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Tosin Ojo'
+        name: 'BlackCoder'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
-        name: 'Tosin Ojo'
+        name: 'BlackCoder'
     })
 })
 
@@ -38,7 +38,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         helpText: 'To use this site follow the simple steps below:',
         title: 'Help',
-        name: 'Tosin Ojo'
+        name: 'BlackCoder'
     })
 })
 
@@ -86,7 +86,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: 404,
-        name: 'Tosin Ojo',
+        name: 'TBlackCoder',
         errorMessage: 'Help article not found.'
     })
 })
@@ -94,7 +94,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: 404,
-        name: 'Tosin Ojo',
+        name: 'BlackCoder',
         errorMessage: 'Page not found'
     })
 })
