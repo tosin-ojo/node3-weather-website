@@ -1,13 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     color: #333333;
+    background-color: white;
     font-family: arial;
-    max-width: 650px;
     margin: 0 auto;
-    padding: 0 16px;
-
+    padding: 0;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 98vh;
+}
+
+nav {
+    padding-left: 33px;
 }
 
 .main-content {
@@ -18,12 +28,11 @@ footer {
     color: #888888;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
-    padding: 16px 0;
+    padding: 16px 16px;
 }
 
 header {
-    margin-top: 16px;
-    margin-bottom: 48px
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -51,6 +60,8 @@ footer a {
 input {
     border: 1px solid #cccccc;
     padding: 8px;
+    margin-bottom: 15px;
+    margin-top: 18px;
 }
 
 button {
