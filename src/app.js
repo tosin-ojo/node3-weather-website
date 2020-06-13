@@ -73,7 +73,7 @@ app.get('/weather', (req, res) => {
 app.get('/products', (req, res) => {
     if (!req.query.search) {
         return res.send({
-            error: 'You must prvide a search term'
+            error: 'You must provide a search term'
         })
     }
 
@@ -86,7 +86,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: 404,
-        name: 'TBlackCoder',
+        name: 'BlackCoder',
         errorMessage: 'Help article not found.'
     })
 })
