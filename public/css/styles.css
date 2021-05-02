@@ -1,101 +1,175 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-    color: #333333;
-    background-color: white;
-    font-family: arial;
-    margin: 0 auto;
-    padding: 0;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 90vh;
+  color: #333333;
+  background-image: url("https://firehorse.uk.com/wp-content/uploads/2016/10/sunrise-for-business-bottom-banner-shutterstock_415195864-1.jpg");
+  font-family: arial;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 25px;
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-}
-
-nav a {
-    border-right: 1px solid #cccccc;
-    width: 100%;
-    padding-left: 16px;
-}
-
-.main-content {
-    flex-grow: 1;
-}
-
-footer {
-    color: #888888;
-    border-top: 1px solid #eeeeee;
-    margin-top: 16px;
-    padding: 16px 16px;
+a {
+  text-decoration: none;
 }
 
 header {
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 64px;
-    margin-bottom: 16px;
+header > h1 {
+  color: rgb(51, 37, 0);
+  font-size: 36px;
+  margin: 0;
+  margin-left: -50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-header a {
-    color: #888888;
-    margin-right: 16px;
-    text-decoration: none;
+header > h1 > img {
+  height: 50px;
 }
 
-footer a {
-    color: #888888;
-    margin-right: 16px;
-    text-decoration: none;
+header > h4 {
+  color: white;
+  font-family: cursive;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
 }
 
-.portrait {
-    width: 250px;
-    height: 300px;
-    margin: 20px;
+header > nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+header > nav > a {
+  color: #5c5c5c;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px;
+}
+
+header > nav > a:hover {
+  background-color: goldenrod;
+  color: white;
 }
 
 form {
-    width: 100%
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-input {
-    border: 1px solid #cccccc;
-    padding: 8px;
-    margin-bottom: 15px;
-    margin-top: 18px;
-    width: 79%;
+form > label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #5c5c5c;
 }
 
-button {
-    cursor: pointer;
-    border: 1px solid #888888;
-    background-color: #888888;
-    color: #ffffff;
-    padding: 8px;
+form > div {
+  display: flex;
+  flex: 1;
+  width: 100%;
 }
 
-ul {
-    line-height: 1.5rem;
-    margin-left: 25px;
+form > div > input {
+  outline: none;
+  border: none;
+  height: 40px;
+  flex: 0.85;
+  padding: 0 10px;
+  box-shadow: 1px 1px 5px 2px gold;
 }
 
-.contact {
-    width: 20px;
-    height: 20px;
-    background-color: red;
+form > div > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  height: 40px;
+  flex: 0.15;
+  background-color: goldenrod;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+form > div > button > #loading {
+  display: none;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  border: dotted 1px #ccc;
+  border-top: dotted 1px white;
+  border-right: dotted 1px white;
+  border-radius: 100%;
+  animation: spin 2s linear infinite;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content > p {
+  text-align: justify;
+  width: 310px;
+  line-height: 2;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+footer > a > img {
+  width: 30px;
+}
+
+footer > a:nth-child(2) {
+  margin: 0 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.portrait {
+  width: 60%;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 320px) {
+  .main-content > p {
+    width: 280px;
+  }
 }

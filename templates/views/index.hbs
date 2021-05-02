@@ -5,36 +5,35 @@
 <head>
     <title>Weather</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/weather.png">
+    <link rel="icon" href="https://freepngimg.com/thumb/categories/2275.png">
     <link rel="stylesheet" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="goldenrod" />
 </head>
 
 <body>
-    <style>
-        p {
-            text-align: justify;
-            width: 310px;
-            line-height: 2rem;
-        }
-    </style>
     <div class="main-content">
         {{>header}}
 
-        <p style="text-align:center;">Use this site to get your weather report</p>
-
         <form>
-            <input placeholder="Location">
-            <button>Search</button>
+            <label for="form__input">Input interested location</label>
+            <div>
+                <input id="form__input" placeholder="Location">
+                <button>
+                    Search
+                    <span id="loading"></span>
+                </button>
+            </div>
         </form>
 
         <p id="message-1" style="font-weight: bold;"></p>
-        <P id="message-2"></P><br>
+        <P id="message-2"></P>
         <p id="message-3"></p>
     </div>
 
     {{>footer}}
-    
+
     <script src="/js/app.js"></script>
 </body>
-    
+
 </html>
